@@ -68,19 +68,19 @@ const formatDate = (dateString) => {
             </div>
           </div>
           <div  class="grid lg:grid-cols-2 gap-6 py-6">
-            <div :class="counter.page.location ? 'text-white' : 'text-lightBlue' "  class="flex gap-6">
+            <div :class="counter.page.location ? 'text-white dark:text-veryDarkBlue' : 'text-lightBlue' "  class="flex gap-6">
               <location  />
              <h2>{{ counter.page.location || 'Not available' }}</h2>
             </div>
-            <div :class="counter.page.twitter_username ? 'text-white' : 'text-lightBlue' "   class="flex gap-6">
+            <div :class="counter.page.twitter_username ? 'text-white dark:text-veryDarkBlue' : 'text-lightBlue' "   class="flex gap-6">
               <twitter  />
               <h2>{{ counter.page.twitter_username || 'Not available' }}</h2>
             </div>
-            <div :class="counter.page.blog ? 'text-white' : 'text-lightBlue' " class="flex gap-6">
+            <div :class="counter.page.blog ? 'text-white dark:text-veryDarkBlue' : 'text-lightBlue' " class="flex gap-6">
               <website />
               <h2>{{ removehttp(counter.page.blog ) || 'Not available' }}</h2>
             </div>
-            <div :class="counter.page.company ? 'text-white' : 'text-lightBlue' "  class="flex gap-6">
+            <div :class="counter.page.company ? 'text-white dark:text-veryDarkBlue' : 'text-lightBlue' "  class="flex gap-6">
               <company  />
               <h2>@{{ counter.page.company || 'Not available' }} </h2>
             </div>
